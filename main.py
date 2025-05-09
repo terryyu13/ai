@@ -7,7 +7,7 @@ st.title("📱 社群貼文自動生成器")
 
 product = st.text_input("請輸入產品名稱或主題：")
 feature = st.text_area("請輸入產品特色或推廣重點：")
-language = st.selectbox("選擇輸出語言：", ["繁體中文", "英文"])
+language = st.selectbox("選擇輸出語言：", ["中文", "英文"])
 
 HUGGINGFACE_API_TOKEN = os.getenv("HUGGINGFACE_API_TOKEN")
 headers = {"Authorization": f"Bearer {HUGGINGFACE_API_TOKEN}"}
