@@ -18,7 +18,7 @@ def generate_text(prompt, max_tokens=100):
         "parameters": {"max_new_tokens": max_tokens}
     }
     response = requests.post(
-        "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.1",
+        ""https://api-inference.huggingface.co/models/tiiuae/falcon-7b-instruct",
         headers=headers,
         json=payload
     )
