@@ -42,7 +42,7 @@ if st.button("生成貼文"):
         st.warning("請輸入完整的主題與特色")
     else:
         prompt = f"請用{language}撰寫一則 Instagram 貼文內容，主題為：{product}，產品特色如下：{feature}，並附上熱門 Hashtag。"
-        result = generate_text(prompt, max_tokens=1000)
+        result = generate_text(prompt, max_tokens=150)
         st.subheader("生成內容：")
         st.write(result)
 
@@ -58,6 +58,6 @@ if st.button("產生回覆"):
         st.warning("請輸入留言內容")
     else:
         reply_prompt = f"針對以下 IG 留言，用{tone}語氣撰寫一則友善的回覆：\n留言：{comment}"
-        result = generate_text(reply_prompt, max_tokens=1000)
+        result = generate_text(reply_prompt, max_tokens=150)
         st.subheader("AI 回覆內容：")
         st.write(result)
